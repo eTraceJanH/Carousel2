@@ -1,7 +1,6 @@
 <main>
-	
    <h1>Thumbs</h1>
-	<swiper [slidesPerView]="1" [spaceBetween]="50" [navigation]="true" [pagination]="{ clickable: true }"
+	<swiper [slidesPerView]="1" [spaceBetween]="5" [navigation]="true" [pagination]="{ clickable: true }"
 		[thumbs]="{ swiper: thumbsSwiper }">
 		<ng-template swiperSlide><img src="../assets/medium/1-medium.jpg"></ng-template>
 		<ng-template swiperSlide><img src="../assets/medium/2-medium.jpg"></ng-template>
@@ -12,7 +11,7 @@
         <ng-template swiperSlide><img src="../assets/medium/7-medium.jpg"></ng-template>
         <ng-template swiperSlide><img src="../assets/medium/8-medium.jpg"></ng-template>
 	</swiper>
-	<swiper [slidesPerView]="3" [spaceBetween]="50" (swiper)="setThumbsSwiper($event)" [navigation]="{}"
+	<swiper [slidesPerView]="3" [spaceBetween]="5" (swiper)="setThumbsSwiper($event)" [navigation]="{}"
 		[pagination]="{ clickable: true }" [scrollbar]="{ draggable: true }" [watchSlidesVisibility]="true"
 		[watchSlidesProgress]="true">
 		<ng-template swiperSlide><img src="../assets/thumbnails/1-thumb.jpg"></ng-template>
